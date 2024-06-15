@@ -27,4 +27,14 @@ int main() {
     duplicateOddValues(lst);
 
     cout << "Преобразованный список: ";
+    for (int elem : lst) {
+        std::cout << elem << " ";
+    }
+    cout << endl;
+    list<int>::iterator iter = lst.begin();
+    int* a = &(*iter);
+    cout << "указатель на первый элемент преобразованного списка " << a;
 
+
+    return 0;
+}
