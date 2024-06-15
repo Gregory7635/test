@@ -21,3 +21,14 @@ public:
 		}
 		else {
 			cout << "Уже полночь" << std::endl;
+		}
+	}
+	void function2() {
+		int totalSeconds = hour * 3600 + minute * 60 + second;
+		totalSeconds += 100 * 60;
+		double hour1 = (totalSeconds / 3600) % 24;
+		double minute1 = (totalSeconds % 3600) / 60;
+		double second1 = totalSeconds % 60;
+
+		cout << "Новое время: " << hour1 << " часов " << minute1 << " минут " << second1 << " секунд." << std::endl;
+	}
