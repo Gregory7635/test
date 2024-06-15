@@ -32,3 +32,14 @@ public:
 
 		cout << "Новое время: " << hour1 << " часов " << minute1 << " минут " << second1 << " секунд." << std::endl;
 	}
+	~Time() {
+		cout << "Объект Time был уничтожен" << endl;
+	}
+};
+int main() {
+	setlocale(LC_ALL, "RU");
+	Time time;
+	time.get();
+	time.function1();
+	time.function2();
+}
