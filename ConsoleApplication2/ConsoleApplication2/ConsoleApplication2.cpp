@@ -1,6 +1,5 @@
 ﻿
 #include <iostream>
-﻿#include <iostream>
 #include <list>
 using namespace std;
 void duplicateOddValues(list<int>& lst) {
@@ -18,4 +17,14 @@ void duplicateOddValues(list<int>& lst) {
 
 int main() {
     setlocale(LC_ALL, "RU");
+    list<int> lst = { 1, 2, 3, 4, 5 };
+
+    cout << "Исходный список: ";
+    for (int elem : lst) {
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
+    duplicateOddValues(lst);
+
+    cout << "Преобразованный список: ";
 
